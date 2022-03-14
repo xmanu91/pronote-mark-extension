@@ -1,0 +1,14 @@
+{
+  "name": "pronote-mark-viewer-chrome-extension",
+  "version": "0.1.0",
+  "description": "pronote-mark-viewer-chrome-extension",
+  "main": "popup.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint popup.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "git archive -o betterstats.zip HEAD"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0"
+  }
+}

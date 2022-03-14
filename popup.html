@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="bs-container">
+
+    <div class="bs-header">
+        <div class='bs-header-title'>BetterStats</div>
+    </div>
+
+    <p class="bs-important">Important: ne sélectionnez aucune note, vous pourriez fausser les résultats !</p>
+
+    <div class="bs-mark-container">
+        <p class="bs-mark-paragraph">Votre moyenne est de:</p>
+    </div>
+
+    <button id="mark" class="bs-button">Calculer la moyenne</button>
+    <div class="bs-secondary-button darkmode-button js-darkmode-btn" id="darkButton">
+        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.299 15.581C17.4142 15.8534 16.4742 16 15.5 16C10.2533 16 6 11.7467 6 6.50002C6 4.043 6.93276 1.80383 8.4635 0.117311C3.67009 0.85649 0 4.99965 0 10C0 15.5228 4.47715 20 10 20C13.4562 20 16.5028 18.2467 18.299 15.581Z" fill="#A7A3C2"/>
+        </svg>
+    </div>
+
+    <div class="bs-footer">
+        <p>Open Source project on <a href="https://github.com/xmanu91" target="_blank">GitHub</a></p>
+    </div>
+    <span id="extErrorMessage" class="bs-error" style="color:red"></span>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --grey: #A7A3C2;
+  --grey-light: #D5CEEA;
+  --grey-lighter: #F8F5FF;
+  --black: #2A2C40;
+  --main :#66cc99 ;
+
+  --btnColor: #66cc99;
+  --btnBorder: #66cc99;
+  --bg: #FFFFFF;            /* Dark/Light Mode : */
+  --btnBg: #F8F5FF;         /* These custom properties are the colors that change */
+  --formText: #000000;      /* when we switch from one mode to another */
+  --headerColor : #161827;  /* we binded some JS to them to facilitate the switch */
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.bs-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    margin: 0;
+    margin-bottom: 16px;
+    text-decoration: none;
+    background: var(--btnColor);
+    color: #fff;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+}
+
+.bs-button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.bs-button:hover {
+    box-shadow: 0px -4px 0px 0px var(--btnBorder) inset;
+    -webkit-box-shadow: 0px -4px 0px 0px var(--btnBorder) inset;
+    -moz-box-shadow: 0px -4px 0px 0px var(--btnBorder) inset;
+}
+
+.bs-button:hover circle {
+    transform: translateX(5px);
+}
+
+.bs-button:hover > span {
+    transform: translateX(-5px);
+}
+
+.bs-container {
+    position: relative;
+    width: 400px;
+    height: 190px; /* had to fix the height because object height auto not working */
+    border: none;
+    background-color: var(--bg);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 24px 24px 16px;
+    transition : background-color 250ms;
+}
+
+
+.darkmode-button {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.bs-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.bs-header-title {
+    font-size: 24px;
+    color: var(--headerColor);
+    font-weight: 900;
+}
+
+.bs-footer {
+    text-align: center;
+    font-size: 11px;
+    color: var(--grey);
+}
+
+.bs-footer a {
+    color: var(--headerColor);
+}
+
+.bs-error {
+    display: block;
+    margin-top: 12px;
+}
+
+.bs-mark-container{
+    color: var(--headerColor);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bs-mark-container h1{
+    font-size: 33px;
+    padding: 15px 0;
+}
+
+.bs-mark-container p{
+    display: none;
+    color: var(--grey);
+}
+
+.bs-important{
+    text-align: center;
+    color: var(--grey);
+    margin-bottom: 10px;
+}
