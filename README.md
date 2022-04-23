@@ -36,4 +36,4 @@ The main config file is ``.eslintrc.json``
 
 ## Thanks
 
-Thanks to Benjamin Code and his community for the base of the extension
+Thanks to Benjamin Code and his community for the base of the extension (https://github.com/bdebon/youtube-thumbnail-tester-chrome-extension)
